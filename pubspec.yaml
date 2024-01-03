@@ -1,0 +1,92 @@
+name: ndumeappflutter
+description: Ndume app
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 3.4.1+33
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Load Vector images library for API's
+  flutter_svg: ^2.0.7
+  flutter_html: ^3.0.0-alpha.6
+  # Dio is http client library for API's
+  dio: ^5.3.2
+  # Flutter blocs is state management library
+  flutter_bloc: ^8.0.1
+  # Functional programming thingies
+  dartz: ^0.10.1
+  # Manage session library
+  shared_preferences: ^2.0.7
+  # File picker library to access storage and add attachments
+  file_picker: ^5.3.3
+  # Encode and decode json files
+  json_annotation: ^4.0.1
+  # Encode and decode json files
+  json_serializable: ^6.7.0
+  # Service locator (Dependency Injection)
+  get_it: ^7.2.0
+  # To check network connectivity
+  connectivity: ^3.0.6
+  # To get locale for date time and language
+  intl: ^0.18.1
+  # To log all the Log level (debug,verbose,info,error,wtf[what the terrible failure log])
+  logger: ^2.0.1
+  # To get all font and icons for customizations
+  font_awesome_flutter: ^10.5.0
+  # Launch any type of url in the package and render all type of files
+  url_launcher: ^6.0.9
+  # re call the method or API by pulling down the view to refresh the UI
+  pull_to_refresh: ^2.0.0
+  # To check Value Equality between objects same Type or data we use Equatable
+  equatable: ^2.0.3
+  # To retrieve users who are near by the location provided.
+  location: ^5.0.3
+  # To test implementation for whole project
+  mockito: ^5.4.0
+  cupertino_icons: ^1.0.2
+  #pagination
+  infinite_scroll_pagination: ^4.0.0
+  #Play store update checker
+  #in_app_update: ^4.0.1
+  upgrader: ^8.1.0
+  fluttertoast: ^8.2.1
+  #video player
+  video_player: ^2.7.0
+  chewie: ^1.7.0
+  #image slider
+  carousel_slider: ^4.2.1
+  #web view
+  webview_flutter: ^4.0.2
+  #For size
+  sizer: ^2.0.15
+  #For generate PDF and share PDF
+  pdf: ^3.10.7
+  share_plus: ^7.1.0
+  path_provider: ^2.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  build_runner: ^2.0.0
+
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/icons/
+    - assets/images/
+    - assets/video/
+
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: font/Montserrat_Medium.ttf
